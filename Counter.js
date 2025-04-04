@@ -1,9 +1,6 @@
 import useState from "./useState.js";
-import g from "./globalState.js";
 
 function Counter() {
-  g.currentComponent = Counter;
-
   const [count, setCount] = useState(0);
 
   const container = document.createElement("div");
